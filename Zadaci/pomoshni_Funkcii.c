@@ -32,7 +32,15 @@ int cifra(int x, int y){
     return (x/stepen(10, y-1))%10;
 }
 
+//Zbir na cifri
+int zbirCifri(int x){
+  int i, zbir = 0;
+  for(i = brCifri(x); i > 0; i--)
+  zbir += cifra(x, i);
+  return zbir;
+}
+
 int main(){
-  printf("%d\n", cifra(15165, 3));
+  printf("%d\n", zbirCifri(15561));
   return 0;
 }
