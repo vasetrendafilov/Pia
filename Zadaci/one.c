@@ -16,6 +16,8 @@ int calc(int type , int x , int y) {
     case 4://br na cifri
       if(x == 0) return 0;
       return 1 + calc(4,x/10,0);
+    case 5://broj vo cifra
+       return (x / calc(2,10,y-1)) % 10;   
   }
 }
 int main ()
@@ -23,7 +25,7 @@ int main ()
 int a,b=0,d;
 while(scanf ("%d", &a))
 {
- printf("%d\n",calc(1,a, calc(4,a,0)));
+ printf("%d\n",calc(5,a,2));
 }
 
 return 0;
