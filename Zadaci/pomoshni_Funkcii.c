@@ -17,7 +17,7 @@ int stepen(int x, int y){
   return pom;
 }
 
-//Funkcija za broj na broj
+//Funkcija za broj na cifri
 int brCifri(int x){
   int broj = 0;
   while(x != 0){
