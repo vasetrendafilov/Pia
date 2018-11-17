@@ -1,8 +1,11 @@
 #include <stdio.h>
-int r = 0;
+int r = 0;//tuka e globalna postavena
 int calc(int type , int x , int y) {
   switch (type)
   {
+    //static int r = 0; originalno r vaka bese najaveno i raboti se logikata
+    //tocno problemot e sto koga vtorpat ke se povika funkcijata r ne e 0 si prodolzuva od prehodniot pat
+    //i vo rekurzijava neznam kako da go napravam da se vrati na nula pa zatoa
     case 1://reverseint
       if (x == 0){
         return 0;
@@ -33,7 +36,7 @@ int a,b=0,d;
 while(scanf ("%d", &a))
 {
   a = calc(1,a,0);
-   r=0;
+   r=0;// i posle seke koristenje ja vrakam pak na 0 za pak da mozam da ja koristam
   printf ("%d\n", a);
   while( a > 0 ){
     b*=10;
