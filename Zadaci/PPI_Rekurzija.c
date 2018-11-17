@@ -1,4 +1,5 @@
 #include <stdio.h>
+//Prv Kolokvium Prva grupa Ispitna zadacha rekurzija
 
 void rekurzija(int x, char z){
   if (x > 0){
