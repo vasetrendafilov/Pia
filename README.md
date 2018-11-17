@@ -1,7 +1,5 @@
-# Pia
-# Kaj ste peeri
+#Репозизторија Програмирање и Алгоритми 
+Решени задачи, примери и слично по предметот ПИА
 
-![alt text](https://i.pinimg.com/originals/9d/74/d4/9d74d4ef9dda9855372b355ab5bf1874.jpg)
+![alt text](https://gifimage.net/wp-content/uploads/2018/04/programming-gif-6.gif)
 
-
-![alt text](https://i.imgur.com/x0ml8.jpg)
