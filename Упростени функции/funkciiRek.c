@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/* Avtor: Nikola Stoimenov 
+/* Avtor: Nikola Stoimenov
    Rekurzivni funkcii za odredeni matemtichki izrazi
    *Napomena funkciite zavisat edna od druga
    *Ushte edna napomena nema da go razberete ova XD */
@@ -30,6 +30,6 @@ int prevrtiCifri(int x){
 }
 
 int main(){
-  printf("%d\n", prevrtiCifri(158));
+  printf("%d\n", stepen(2, 5));
   return 0;
 }

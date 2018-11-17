@@ -7,7 +7,7 @@ int calc(int type , int x , int y) {
       if (x == 0) return 0;
       return ((x % 10) * calc(2, 10, calc(4,x,0) - 1)) + calc(1, x / 10, 0);
     case 2://power
-      if (y != 0) return (x*calc(2, 123x, y-1));
+      if (y != 0) return (x*calc(2, x, y-1));
       else return 1;
     case 3://zbir na cifri
       if (x == 0) return 0;

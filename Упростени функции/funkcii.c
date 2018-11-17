@@ -41,6 +41,6 @@ int zbirCifri(int x){
 }
 
 int main(){
-  printf("%d\n", zbirCifri(15561));
+  printf("%d\n", cifra(126516, 3));
   return 0;
 }
