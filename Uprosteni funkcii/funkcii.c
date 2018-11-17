@@ -4,7 +4,7 @@
 int prevrti(int x){
   int broj = 0;
   while(x != 0){
-    broj += broj * 10 + x%10;
+    broj = broj * 10 + x%10;
     x /= 10;
   }
   return broj;
@@ -41,6 +41,6 @@ int zbirCifri(int x){
 }
 
 int main(){
-  printf("%d\n", cifra(126516, 3));
+  printf("%d\n", prevrti(235));
   return 0;
 }
