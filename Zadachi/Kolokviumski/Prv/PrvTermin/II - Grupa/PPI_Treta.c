@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/*
+ Prv parcijalen, Prv termin, Vtora Grupa, Treta Zadacha...
+ Avtor: Nikola Stoimenov
+*/
+
 void rekurzija(int x, int y){
   if ((x != 0) && (y != 0)) rekurzija(x/10, y/10);
 
