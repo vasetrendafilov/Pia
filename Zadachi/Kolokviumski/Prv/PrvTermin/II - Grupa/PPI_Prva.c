@@ -1,4 +1,8 @@
 #include <stdio.h>
+/*
+  Prv parcijalen, Prv Termin, Vtora Grupa, Prva zadacha...
+  Avtor: Nikola Stoimenov
+*/
 
 int stepen(int x, int y){
   if (y == 0) return 1;
