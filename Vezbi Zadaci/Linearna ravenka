@@ -21,5 +21,5 @@ int main()
     d=(c2=='-')?-d:d;
     if(a==c&&b!=d) printf("NEMA RESHENIE");
     else if(a==c && b==d)printf("BESKONECHNO MNOGU RESHENIJA");
-    else printf("x = %.4f",(d-b)/(a-c));
+    else printf("x = %.2f",(d-b)/(a-c));
 }
