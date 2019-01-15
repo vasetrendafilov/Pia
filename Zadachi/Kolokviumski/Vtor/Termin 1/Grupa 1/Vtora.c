@@ -1,3 +1,5 @@
+//Avtor Nikola Stoimenov
+//Vtor Parcijalen 29.12.2014, Termin 1 Grupa 1, Vtora Zadacha...
 #include <stdio.h>
 #define max 10
 
@@ -18,7 +20,7 @@ void isp(int x[max][max], int n, int k, int br){
 }
 
 int main(){
-  int x[max][max], br, n, k, i, j;
+  int x[max][max], br, n, k;
 
   printf("Vnesi broj na redici: ");
   scanf("%d", &n);

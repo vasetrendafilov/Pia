@@ -3,6 +3,7 @@
 #include <stdio.h>
 #define MAX_ELEMENTI 50
 
+//Odreduva dali x e pozitiven ili negativen
 int isP(int *x){
   if (*(x)>0) return 1;
   if (*(x)<0) return 0;
