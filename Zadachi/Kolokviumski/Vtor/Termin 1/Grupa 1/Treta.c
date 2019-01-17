@@ -1,3 +1,5 @@
+//Avtor: Nikola Stoimenov
+//Vtor parcijalen ispit, Termin 1 Grupa 1, Treda zadacha...
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
