@@ -1,3 +1,5 @@
+//Avtor: Nikola Stoimenov, Petar Mechev, Petar Panov, Kristijan Cvetkov
+
 #include <stdio.h>
 
 int parnost(int x){
