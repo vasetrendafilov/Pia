@@ -2,33 +2,32 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-int main(){
+void justAlnum(char *s){
+  for (size_t i = 0; i < strlen(s); i++)if(!isalnum(s[i]))s[i]=' ';
+}
+int repeatAlpha(char *s){
+  int count=0;
+  for (size_t i = 0; i < strlen(s); i++){
+    for (size_t j = i+1; j < strlen(s); j++)
+      if(s[i]==s[j])count++;
+    if(count>=2)return 1;
+  }
+  return 0;
+}
+int main(int argc, char *argv[]){
   int a[10],i=0,m=0,red=0,br=0;
-char c[100];
+char c,s[30];
 FILE *in,*out;
 in = fopen("datoteka.txt","r");
 out = fopen("final.txt","w");
-while (!feof(in) && fgets(c,100,in)){
-  c[strlen(c)-1]='\0';
-  fputs(c,out);
-  for (i = 0; i < strlen(c); i++) {
-    switch(c[i]){
-    case '0':fputs("-nula",out);break;
-    case '1':fputs("-eden",out);break;
-    case '2':fputs("-dva",out);break;
-    case '3':fputs("-tri",out);break;
-    case '4':fputs("-cetiri",out);break;
-    case '5':fputs("-pet",out);break;
-    case '6':fputs("-sest",out);break;
-    case '7':fputs("-sedum",out);break;
-    case '8':fputs("-osum",out);break;
-    case '9':fputs("-devet",out);break;
-    default: break;
-    }
-  }
-  fputc('\n',out);
-}
 
+while (! feof(in) && fgets(s,100,in)){
+  justAlnum(s);
+  for (char *p = strtok(s," "); p!= NULL; p = strtok(NULL," ")){
+   if(repeatAlpha(p)){m++;puts(p);}
+  }
+}
+printf("Imase %d zborovi", m);
 //rewind(dat);
 //fputs(c,dat);
 fclose(in);
